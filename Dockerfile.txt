@@ -1,6 +1,6 @@
 FROM python:2.7
-COPY . /flaskApp
-WORKDIR /flaskApp
+COPY . /app
+WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
 CMD ["main2.py"]
